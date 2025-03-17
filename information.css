@@ -1,0 +1,32 @@
+#information {
+    .window {
+        justify-content: space-between;
+        display: flex;
+        padding:2rem 4rem 2rem 4rem;
+        position: relative;
+        #detail{
+            div{
+                padding:3px;
+            }
+        }
+    }
+    img{
+        border-radius: 50%;
+        height: 18rem;
+    }
+    .window#skill{
+        display: flex;
+        flex-direction: column;
+        img.icon{
+            width: 2rem;
+            height: 2rem;
+        }
+        .skill_element{
+            margin-top: 1rem;
+            .title{
+                font-size: 2rem;
+                font-weight: 800;
+            }
+        }
+    }
+}
