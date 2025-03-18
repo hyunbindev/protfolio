@@ -31,7 +31,11 @@ const options = {
     rootMargin: "0px",
     threshold: 0.4
 };
-
+const projectOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1
+};
 let observer = new IntersectionObserver(callback, options);
 let target = document.querySelector("#information");
 
@@ -71,11 +75,12 @@ let ansungmanagerObserver = new IntersectionObserver((entries)=>{
         if(entry.isIntersecting){
             document.body.style.backgroundColor = '#DFFFD6';
             ansungManagerPage.style.opacity = 1;
+            ansungManagerPage.classList.add('fade-enterance');
         }else{
             document.body.style.backgroundColor = '#F5F5F7';
             ansungManagerPage.style.opacity = 0;
         }
     })
-},options)
+},projectOptions)
 
 ansungmanagerObserver.observe(ansungManagerPage);

@@ -4,6 +4,9 @@
     background-color: white;
     padding:1rem;
     border-radius: 1rem;
+    #header{
+        position: sticky;
+    }
     .project_info{
         margin-top: 0.5rem;
         margin-left: 4rem;
@@ -20,7 +23,7 @@
         }
     }
     #architecture{
-        margin-top: 10rem;
+        margin-top: 5rem;
         img{
             width: 100%;
         }
