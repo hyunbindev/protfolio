@@ -63,4 +63,19 @@ function reavalProjectElement(index , elements){
         setTimeout(()=> reavalProjectElement(index+1,elements),300);
     }
 }
-//setTimeout(() => typeTitle(index , subTitleIndex+1),speed);
+
+let ansungManagerPage = document.querySelector('#ansungmanager_project');
+console.log(ansungManagerPage)
+let ansungmanagerObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry =>{
+        if(entry.isIntersecting){
+            document.body.style.backgroundColor = '#DFFFD6';
+            ansungManagerPage.style.opacity = 1;
+        }else{
+            document.body.style.backgroundColor = '#F5F5F7';
+            ansungManagerPage.style.opacity = 0;
+        }
+    })
+},options)
+
+ansungmanagerObserver.observe(ansungManagerPage);

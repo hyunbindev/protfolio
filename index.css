@@ -2,6 +2,7 @@ body{
     margin:0;
     background-color: #F5F5F7;
     color: black;
+    transition: background-color 0.5s ease-in-out;
 }
 .page{
     margin: 0px;
@@ -64,6 +65,25 @@ a:hover{
 }
 .slit-in-vertical-enterance{
     animation: slit-in-vertical 0.3s ease-in-out forwards;
+}
+.git_hub{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 2rem;
+  top:2rem;
+  font-size: 1.2rem;
+  padding:3px;
+  background-color: white;
+  border-radius: 5px;
+  a{
+    background-color: none;
+  }
+  img{
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+  }
 }
 @keyframes puff-in-center {
     0% {
