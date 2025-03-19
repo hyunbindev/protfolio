@@ -69,7 +69,6 @@ function reavalProjectElement(index , elements){
 }
 
 let ansungManagerPage = document.querySelector('#ansungmanager_project');
-console.log(ansungManagerPage)
 let ansungmanagerObserver = new IntersectionObserver((entries)=>{
     entries.forEach(entry =>{
         if(entry.isIntersecting){
@@ -84,3 +83,18 @@ let ansungmanagerObserver = new IntersectionObserver((entries)=>{
 },projectOptions)
 
 ansungmanagerObserver.observe(ansungManagerPage);
+let ansungManagerService = document.querySelector('#ansungmanager_project_service')
+let ansungManagerServiceObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry =>{
+        if(entry.isIntersecting){
+            document.body.style.backgroundColor = '#b5e9fc';
+            ansungManagerService.style.opacity = 1;
+            ansungManagerService.classList.add('fade-enterance');
+        }else{
+            document.body.style.backgroundColor = '#F5F5F7';
+            ansungManagerService.style.opacity = 0;
+        }
+    })
+},projectOptions)
+
+ansungManagerServiceObserver.observe(ansungManagerService)
