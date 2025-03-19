@@ -73,7 +73,7 @@ console.log(ansungManagerPage)
 let ansungmanagerObserver = new IntersectionObserver((entries)=>{
     entries.forEach(entry =>{
         if(entry.isIntersecting){
-            document.body.style.backgroundColor = '#DFFFD6';
+            document.body.style.backgroundColor = '#b5e9fc';
             ansungManagerPage.style.opacity = 1;
             ansungManagerPage.classList.add('fade-enterance');
         }else{
