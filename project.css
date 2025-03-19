@@ -22,3 +22,9 @@
         opacity: 0;
     }
 }
+#project_service{
+    padding:1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    margin:2rem;
+}
