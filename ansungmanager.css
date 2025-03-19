@@ -43,11 +43,14 @@
     padding:2rem;
     display: flex;
     justify-content: space-between;
+    
     img{
         height: 25rem;
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     }
     .image_container{
+        padding:10px;
+        overflow-x: scroll;
         flex-grow: 1;
         display: flex;
         justify-content: space-around;
